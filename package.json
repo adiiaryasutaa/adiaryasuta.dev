@@ -1,24 +1,24 @@
 {
-  "name": "adiiaryasutaa",
-  "version": "0.0.0",
+  "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.0.13",
-    "js-cookie": "^3.0.1",
-    "vue": "^3.2.45",
-    "vue-i18n": "^9.2.2",
-    "vue-router": "^4.1.6"
+    "@heroicons/vue": "^2.2.0",
+    "@nuxtjs/i18n": "^8.5.6",
+    "@tailwindcss/vite": "^4.1.11",
+    "nuxt": "3.12.4",
+    "tailwindcss": "^4.1.11",
+    "vue": "latest"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.20",
-    "tailwindcss": "^3.2.4",
-    "vite": "^4.0.0"
-  }
+    "@nuxtjs/color-mode": "^3.5.2"
+  },
+  "packageManager": "pnpm@10.12.4+sha512.5ea8b0deed94ed68691c9bad4c955492705c5eeb8a87ef86bc62c74a26b037b08ff9570f108b2e4dbd1dd1a9186fea925e527f141c648e85af45631074680184"
 }
