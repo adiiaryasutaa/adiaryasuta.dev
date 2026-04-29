@@ -1,0 +1,79 @@
+{
+  "brand": "Adi Aryasuta",
+  "navbar": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "project": "Proyek",
+    "blog": "Blog"
+  },
+  "soon": "Segera",
+  "home": {
+    "description": "Seorang <span class=\"font-semibold\">Software Developer</span> yang senang membuat produk yang bermanfaat",
+    "see-more": "Lebih banyak tentang saya"
+  },
+  "about": {
+    "description": [
+      "Perkenalkan nama saya I Gusti Ngurah Agung Adi Aryasuta, saya biasa dipanggil Gung Adi atau Adi. Saya adalah seorang Software Developer dan pelajar. Saya lahir dan tinggal di Denpasar, Bali. Saat ini saya adalah seorang siswa di <a class=\"text-slate-700 font-semibold hover:underline dark:text-slate-100\" href=\"https://www.smkn1denpasar.sch.id/\" target=\"_blank\">SMK Negeri 1 Denpasar</a> dengan jurusan Rekayasa Perangkat Lunak. Awal saya ingin menekuni bidang pemrograman dimulai saat saya ingin membuat game saat SD. Tetapi saat itu saya belum mengetahui tentang pemrograman dan ekosistemnya. Kemudian di saat saya kelas 9, saat saya menonton televisi saya melihat salah satu program televisi yang membahas tentang seorang programmer. Saya penasaran, apa itu programmer? Setelah saya mencari tahu, saya mulai paham tentang programming, programmer, dan apa yang dilakukannya. Lalu saya sadar bahwa keinginan saya saat SD yaitu membuat game bisa diwujudkan jika saya mempelajari bidang ini. Sehingga saya mencari sekolah yang memiliki jurusan yang mempelajari pemrograman dan ekosistemnya. Saya menemukan SMK Negeri 1 Denpasar memiliki jurusan tersebut yaitu Rekayasa Perangkat Lunak.",
+      "Saat saya memilih bahasa pemrograman pertama yang saya akan pelajari, saya menonton sebuah <a class=\"text-slate-700 font-semibold hover:underline dark:text-slate-100\" href=\"https://youtube.com/playlist?list=PLZS-MHyEIRo4Ze0bbGB1WKBSNMPzi-eWI\" target=\"_blank\">Playlist YouTube Belajar C++ Dasar</a> dari channel <a class=\"text-slate-700 font-semibold hover:underline dark:text-slate-100\" href=\"https://www.youtube.com/KelasTerbuka\" target=\"_blank\">Kelas Terbuka</a>. Karena saya tertarik dengan penjelasannya, saya memepelajari C++ dari playlist tersebut. Sehingga C++ adalah bahasa pemrograman pertama yang saya pelajari. Tetapi di sekolah tidak mempelajari C++, melainkan mempelajari Java dan PHP yang membuat saya mulai jarang melanjutkan mempelajari C++ sampai saat ini. C++ adalah bahasa pemrograman favorit saya, karena C++ saya dapat mempelajari dan memahami bahasa pemrograman lainnya seperti Java, PHP, JavaScript, dan lainnya dengan cukup cepat.",
+      "Saya masih mempelajari keahlian-keahlian Software Developer. Sehingga saya mungkin dapat membuat kesalahan-kesalahan saat pengembangan sebuah Software. Jika teman-teman ingin bekerja sama dengan saya, ingin menggunakan jasa saya, atau sekedar ingin bertanya-tanya pada saya, teman-teman dapat menghubungi saya melalui tautan atau link media sosial yang saya cantumkan pada halaman beranda atau Home."
+    ],
+    "image-description": [
+      "Adi Aryasuta di SMK Negeri 1 Denpasar",
+      "Poto ini dipotret oleh <a class=\"text-slate-600 font-semibold hover:underline dark:text-slate-400\" href=\"https://snstechbali.github.io/santinrswri/\" target=\"_blank\">Santi Nareswari</a>"
+    ],
+    "skill-section-title": "Keahlian",
+    "tool-section-title": "Alat"
+  },
+  "project": {
+    "section-title": "Proyek",
+    "erpeelone-58": {
+      "title": "Erpeelone 58",
+      "description": "Official website XI RPL 1 | ERPEELONE"
+    },
+    "sejarahku": {
+      "title": "Sejarahku",
+      "description": "Sebuah website untuk mempelajari sejarah"
+    },
+    "skenmath": {
+      "title": "SkenMath",
+      "description": "Belajar matematika untuk SMA/SMK"
+    },
+    "get-anime-quote": {
+      "title": "Get Anime Quote",
+      "description": "Dapatkan Kutipan atau quote anime keren"
+    },
+    "aplikasi-kasir": {
+      "title": "Aplikasi Kasir",
+      "description": "Proyek mata pelajaran Pemrograman Berorientasi Objek (PBO)"
+    },
+    "rps-game": {
+      "title": "RPS Game",
+      "description": "Sebuah game yang saya buat saat menunggu guru selesai rapat"
+    },
+    "reaction-timer": {
+      "title": "Reaction Timer",
+      "description": "Uji kecepatan reaksimu"
+    },
+    "hub-pasien": {
+      "title": "Hub Pasien",
+      "description": "Landing page Hub Pasien"
+    },
+    "blog-hub-pasien": {
+      "title": "Blog Hub Pasien",
+      "description": "Aplikasi blog Hub Pasien"
+    },
+    "pengaduan-masyarakat": {
+      "title": "Pengaduan Masyarakat",
+      "description": "Aplikasi website untuk latihan sebelum Uji Kompetensi 2023"
+    },
+    "pembayaran-spp": {
+      "title": "Pembayaran SPP",
+      "description": "Proyek Uji Kompetensi 2023"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Adi Aryasuta",
+    "technology": "Built with <span class=\"font-semibold\">Vue 3</span> and <span class=\"font-semibold\">TailwindCSS</span>",
+    "host": "Hosted on <span class=\"font-semibold\">Vercel</span>"
+  }
+}

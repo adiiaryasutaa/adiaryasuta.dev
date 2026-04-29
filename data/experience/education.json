@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "school": "Primakara University",
+      "major": "Informatics",
+      "description": "I'm currently studying Informatics at Primakara University. I'm interested in web development and mobile development.",
+      "start": "2023",
+      "end": "2027"
+    },
+    {
+      "school": "SMK Negeri 1 Denpasar",
+      "major": "Software Engineering",
+      "description": "I'm currently studying Software Engineering at SMK Negeri 1 Denpasar. I'm interested in web development and mobile development.",
+      "start": "2020",
+      "end": "2023"
+    }
+  ]
+}

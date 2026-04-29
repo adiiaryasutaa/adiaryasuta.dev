@@ -1,0 +1,65 @@
+{
+  "data": [
+    {
+      "title": "Game Programmer",
+      "employment": "Part-time",
+      "company": "Palm Game Studio",
+      "description": "I'm currently working as a Full Stack Web Developer & UI/UX Designer at PT. Guna Teknologi Nusantara (RED System). I'm interested in web development and UI/UX design.",
+      "current": true,
+      "start": {
+        "month": "January",
+        "year": "2024"
+      },
+      "end": {},
+      "media": []
+    },
+    {
+      "title": "Full Stack Web Developer & UI/UX Designer",
+      "employment": "Part-time",
+      "company": "Atrem Project",
+      "description": "I'm currently working as a Full Stack Web Developer & UI/UX Designer at PT. Guna Teknologi Nusantara (RED System). I'm interested in web development and UI/UX design.",
+      "current": false,
+      "start": {
+        "month": "October",
+        "year": "2023"
+      },
+      "end": {
+        "month": "January",
+        "year": "2024"
+      },
+      "media": []
+    },
+    {
+      "title": "Full Stack Web Developer & Copywriter",
+      "employment": "Internship",
+      "company": "PT. Guna Teknologi Nusantara (RED System)",
+      "description": "I'm currently working as a Full Stack Web Developer & Copywriter at PT. Guna Teknologi Nusantara (RED System). I'm interested in web development and copywriting.",
+      "current": false,
+      "start": {
+        "month": "January",
+        "year": "2022"
+      },
+      "end": {
+        "month": "April",
+        "year": "2022"
+      },
+      "media": []
+    },
+    {
+      "title": "Mobile Application Developer",
+      "employment": "Internship",
+      "company": "Blue Lake Indonesia",
+      "description": "I'm currently working as a Mobile Application Developer at Blue Lake Indonesia. I'm interested in mobile development.",
+      "current": false,
+      "start": {
+        "month": "January",
+        "year": "2021"
+      },
+      "end": {
+        "month": "April",
+        "year": "2022"
+      },
+      "media": []
+    }
+  ]
+}

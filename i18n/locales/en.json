@@ -1,0 +1,81 @@
+{
+  "brand": "Adi Aryasuta",
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "project": "Project",
+    "blog": "Blog",
+    "friend": "Friend"
+  },
+  "soon": "Soon",
+  "home": {
+    "brand": "Full-Stack Web Developer & Mobile Developer",
+    "description": "Hello I'm, Adi Aryasuta, also known as Adi. I'm form Denpasar, Bali, Indonesia. I specialize in full-stack web developer, handling everything from front-end and back-end to cloud infrastructure. My toolkit includes TypeScript, Next.js, Nest.js, and more",
+    "see-more": "More about me"
+  },
+  "about": {
+    "description": [
+      "Hello! I'm Gung Adi, a multi-disciplinary developer with expertise in Full-Stack Web, Mobile, and Game Development, based on the beautiful island of Bali 🇮🇩.",
+      "I primarily work as a freelance developer, helping clients bring their digital ideas to life. Alongside my freelance work, I contribute as a part-time Game Programmer at Palm Game Studio.",
+      "Passionate about community building, I lead Primakara Developers, a local developer community in Bali. I enjoy sharing my learning journey and empowering fellow developers to grow."
+    ],
+    "image-description": [
+      "Adi Aryasuta at SMK Negeri 1 Denpasar",
+      "This photo was taken by <a class=\"text-slate-600 font-semibold hover:underline dark:text-slate-400\" href=\"https://snstechbali.github.io/santinrswri/\" target=\"_blank\">Santi Nareswari</a>"
+    ],
+    "skill-section-title": "Skills",
+    "tool-section-title": "Tools"
+  },
+  "project": {
+    "section-title": "Project",
+    "erpeelone-58": {
+      "title": "Erpeelone 58",
+      "description": "Official website XI RPL 1 | ERPEELONE"
+    },
+    "sejarahku": {
+      "title": "Sejarahku",
+      "description": "A website for learning about history"
+    },
+    "skenmath": {
+      "title": "SkenMath",
+      "description": "Learn math for senior high school students"
+    },
+    "get-anime-quote": {
+      "title": "Get Anime Quote",
+      "description": "Get cool anime quote"
+    },
+    "aplikasi-kasir": {
+      "title": "Aplikasi Kasir",
+      "description": "Object-oriented programming subject project"
+    },
+    "rps-game": {
+      "title": "RPS Game",
+      "description": "Game that I made, while waiting for the teacher who was in a meeting"
+    },
+    "reaction-timer": {
+      "title": "Reaction Timer",
+      "description": "Test your reaction speed"
+    },
+    "hub-pasien": {
+      "title": "Hub Pasien",
+      "description": "Landing page Hub Pasien"
+    },
+    "blog-hub-pasien": {
+      "title": "Blog Hub Pasien",
+      "description": "Blog for Hub Pasien"
+    },
+    "pengaduan-masyarakat": {
+      "title": "Pengaduan Masyarakat",
+      "description": "Web application for training before the 2023 Competency Test"
+    },
+    "pembayaran-spp": {
+      "title": "Pembayaran SPP",
+      "description": "Competency test project 2023"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Adi Aryasuta. All rights reserved.",
+    "technology": "Built with <span class=\"font-semibold\">Vue 3</span> and <span class=\"font-semibold\">TailwindCSS</span>",
+    "host": "Hosted on <span class=\"font-semibold\">Vercel</span>"
+  }
+}

@@ -1,0 +1,22 @@
+diff --git a/build/src/templates/error_stack/main.js b/build/src/templates/error_stack/main.js
+index 7a8bd39ee26af1351576222b2a0b86e55f208bf1..d4416aeb72194dc756a6efdd2952ae4baeb04409 100644
+--- a/build/src/templates/error_stack/main.js
++++ b/build/src/templates/error_stack/main.js
+@@ -18,7 +18,7 @@ var ErrorStack = class extends BaseComponent {
+ 	cssFile = new URL("./error_stack/style.css", publicDirURL);
+ 	scriptFile = new URL("./error_stack/script.js", publicDirURL);
+ 	#getRelativeFileName(filePath) {
+-		return filePath.replace(`${process.cwd()}/`, "");
++		return filePath ? filePath.replace(`${process.cwd()}/`, "") : "<anonymous>";
+ 	}
+ 	#getFirstExpandedFrameIndex(frames) {
+ 		let expandAtIndex = frames.findIndex((frame) => frame.type === "app");
+@@ -27,7 +27,7 @@ var ErrorStack = class extends BaseComponent {
+ 	}
+ 	#getEditorLink(ide, frame) {
+ 		const editorURL = EDITORS[ide] || ide;
+-		if (!editorURL || frame.type === "native") return { text: this.#getRelativeFileName(frame.fileName) };
++		if (!editorURL || frame.type === "native" || !frame.fileName) return { text: this.#getRelativeFileName(frame.fileName) };
+ 		return {
+ 			href: editorURL.replace("%f", frame.fileName).replace("%l", String(frame.lineNumber)),
+ 			text: this.#getRelativeFileName(frame.fileName)

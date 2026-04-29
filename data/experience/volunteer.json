@@ -1,0 +1,73 @@
+{
+  "data": [
+    {
+      "title": "Lead",
+      "organization": "Primakara Developers",
+      "description": "I'm currently working as a Lead, Instructor, & Learning Facilitator at Primakara Developers. I'm interested in event organizing and management.",
+      "current": true,
+      "start": {
+        "month": "January",
+        "year": "2023"
+      },
+      "end": {},
+      "media": []
+    },
+    {
+      "title": "Head of Event Organizer",
+      "organization": "Google Developer Group on Campus Primakara University",
+      "description": "I'm currently working as a Head of Event Organizer at Google Developer Group on Campus Primakara University. I'm interested in event organizing and management.",
+      "current": true,
+      "start": {
+        "month": "November",
+        "year": "2024"
+      },
+      "end": {},
+      "media": []
+    },
+    {
+      "title": "Instructor & Curriculum Advisor at Mini Class Basic C++",
+      "organization": "Primakara Developers",
+      "description": "I'm currently working as a Instructor & Curriculum Advisor at Mini Class Basic C++.",
+      "current": true,
+      "start": {
+        "month": "December",
+        "year": "2023"
+      },
+      "end": {
+        "month": "February",
+        "year": "2024"
+      },
+      "media": []
+    },
+    {
+      "title": "Facilitator at Intermediate Back-End Class",
+      "organization": "Primakara Developers",
+      "description": "I'm currently working as a Facilitator at Intermediate Javascript Class.",
+      "current": true,
+      "start": {
+        "month": "January",
+        "year": "2023"
+      },
+      "end": {
+        "month": "February",
+        "year": "2024"
+      },
+      "media": []
+    },
+    {
+      "title": "Facilitator at Beginner Javascript Class",
+      "organization": "Primakara Developers",
+      "description": "I'm currently working as a Facilitator at Intermediate Javascript Class.",
+      "current": true,
+      "start": {
+        "month": "November",
+        "year": "2023"
+      },
+      "end": {
+        "month": "January",
+        "year": "2024"
+      },
+      "media": []
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <main class="py-24 md:py-32">
-    <slot/>
+  <main class="py-20">
+    <slot />
   </main>
 </template>

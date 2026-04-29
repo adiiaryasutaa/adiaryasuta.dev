@@ -1,0 +1,122 @@
+{
+  "backend": {
+    "data": [
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
+        "name": "NestJS",
+        "highlight": true,
+        "description": "NestJS is a framework for building server-side applications."
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg",
+        "name": "Laravel",
+        "highlight": true,
+        "description": "Laravel is a web application framework with expressive, elegant syntax."
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        "name": "Node.js",
+        "highlight": false
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+        "name": "PHP",
+        "highlight": false
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        "name": "TypeScript",
+        "highlight": false
+      }
+    ]
+  },
+  "frontend": {
+    "data": [
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        "name": "Nuxt.js",
+        "highlight": true,
+        "description": "Nuxt.js is a framework for building server-side applications."
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        "name": "Next.js",
+        "highlight": true,
+        "description": "Next.js is a framework for building server-side applications."
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+        "name": "TailwindCSS",
+        "highlight": true,
+        "description": "TailwindCSS is a utility-first CSS framework for rapidly building custom user interfaces."
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+        "name": "Vue.js",
+        "highlight": false
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        "name": "React",
+        "highlight": false
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+        "name": "Bootstrap",
+        "highlight": false
+      }
+    ]
+  },
+  "database": {
+    "data": [
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+        "name": "MySQL",
+        "highlight": false
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        "name": "PostgreSQL",
+        "highlight": false
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+        "name": "Firebase",
+        "highlight": false
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+        "name": "Supabase",
+        "highlight": false
+      }
+    ]
+  },
+  "mobile": {
+    "data": [
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
+        "name": "Android",
+        "highlight": false
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
+        "name": "Flutter",
+        "highlight": false
+      }
+    ]
+  },
+  "tools": {
+    "data": [
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        "name": "Git",
+        "highlight": false
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        "name": "GitHub",
+        "highlight": false
+      }
+    ]
+  }
+}

@@ -9,7 +9,7 @@ const projects = useProject();
     <template #title>
       <ContainerTitle>{{ $t('project.section-title') }}</ContainerTitle>
     </template>
-    <div class="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 md:mt-6 lg:mt-8 xl:grid-cols-3 xl:gap-8 xl:mt-10">
+    <div class="flex flex-col gap-4 mt-4">
       <ProjectCard v-for="project in projects" :project="project"/>
     </div>
   </Container>
