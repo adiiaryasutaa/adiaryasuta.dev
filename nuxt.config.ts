@@ -37,14 +37,14 @@ export default defineNuxtConfig({
       { property: "og:site_name", content: "Adi Aryasuta" },
       {
         property: "og:image",
-        content: "https://adiaryasuta.vercel.app/assets/imgs/adiaryasuta.jpg",
+        content: "https://adiaryasuta.dev/assets/imgs/adiaryasuta.jpg",
       },
       { property: "og:image:width", content: "400" },
       { property: "og:image:height", content: "400" },
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:image",
-        content: "https://adiaryasuta.vercel.app/assets/imgs/adiaryasuta.jpg",
+        content: "https://adiaryasuta.dev/assets/imgs/adiaryasuta.jpg",
       },
     ],
   },
@@ -65,7 +65,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: "https://adiaryasuta.vercel.app",
+    url: "https://adiaryasuta.dev",
     name: "Adi Aryasuta",
   },
 

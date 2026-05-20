@@ -47,7 +47,7 @@ const formattedDate = computed(() => {
   }).format(new Date(post.value.date));
 });
 
-const OG_IMAGE = "https://adiaryasuta.vercel.app/assets/imgs/adiaryasuta.jpg";
+const OG_IMAGE = "https://adiaryasuta.dev/assets/imgs/adiaryasuta.jpg";
 
 useSeoMeta({
   title: () => post.value?.title ?? "Blog",
@@ -55,7 +55,7 @@ useSeoMeta({
   ogTitle: () => post.value?.title ?? "Blog",
   ogDescription: () => post.value?.description ?? "",
   ogType: "article",
-  ogUrl: () => `https://adiaryasuta.vercel.app/blog/${slug}`,
+  ogUrl: () => `https://adiaryasuta.dev/blog/${slug}`,
   ogImage: () => post.value?.cover ?? OG_IMAGE,
   articlePublishedTime: () => post.value?.date,
   articleTag: () => post.value?.tags,
@@ -79,7 +79,7 @@ useHead({
           author: {
             "@type": "Person",
             name: "Adi Aryasuta",
-            url: "https://adiaryasuta.vercel.app",
+            url: "https://adiaryasuta.dev",
           },
           image: post.value?.cover ?? OG_IMAGE,
         })

@@ -7,7 +7,7 @@ useSeoMeta({
   ogTitle: () => t("navbar.about"),
   ogDescription: () => t("meta.about-description"),
   ogType: "website",
-  ogUrl: "https://adiaryasuta.vercel.app/about",
+  ogUrl: "https://adiaryasuta.dev/about",
   twitterTitle: () => t("navbar.about"),
   twitterDescription: () => t("meta.about-description"),
 });

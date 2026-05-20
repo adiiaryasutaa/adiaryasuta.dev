@@ -7,7 +7,7 @@ useSeoMeta({
   ogTitle: () => t("brand"),
   ogDescription: () => t("meta.description"),
   ogType: "website",
-  ogUrl: "https://adiaryasuta.vercel.app",
+  ogUrl: "https://adiaryasuta.dev",
   twitterTitle: () => t("brand"),
   twitterDescription: () => t("meta.description"),
 });
@@ -20,9 +20,9 @@ useHead({
         "@context": "https://schema.org",
         "@type": "Person",
         name: "Adi Aryasuta",
-        url: "https://adiaryasuta.vercel.app",
+        url: "https://adiaryasuta.dev",
         jobTitle: "Full-Stack Web & Mobile Developer",
-        image: "https://adiaryasuta.vercel.app/assets/imgs/adiaryasuta.jpg",
+        image: "https://adiaryasuta.dev/assets/imgs/adiaryasuta.jpg",
         sameAs: [
           "https://github.com/adiiaryasutaa",
           "https://www.linkedin.com/in/i-gusti-ngurah-agung-adi-aryasuta-32870723b",

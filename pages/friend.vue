@@ -7,7 +7,7 @@ useSeoMeta({
   ogTitle: () => t("navbar.friend"),
   ogDescription: () => t("meta.friend-description"),
   ogType: "website",
-  ogUrl: "https://adiaryasuta.vercel.app/friend",
+  ogUrl: "https://adiaryasuta.dev/friend",
   twitterTitle: () => t("navbar.friend"),
   twitterDescription: () => t("meta.friend-description"),
 });

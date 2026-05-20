@@ -2,7 +2,7 @@
 
 ## Context
 
-The site at `https://adiaryasuta.vercel.app` is currently 100% static — all "dynamic" content lives in JSON files (`data/*.json`), markdown (`content/blog/*.md`), and i18n locales (`i18n/locales/{en,id}.json`). There is no backend, no DB, no auth. The user wants an admin UI to edit all of this without touching code, plus control SEO, and the admin must not be reachable by guessing `/admin`.
+The site at `https://adiaryasuta.dev` is currently 100% static — all "dynamic" content lives in JSON files (`data/*.json`), markdown (`content/blog/*.md`), and i18n locales (`i18n/locales/{en,id}.json`). There is no backend, no DB, no auth. The user wants an admin UI to edit all of this without touching code, plus control SEO, and the admin must not be reachable by guessing `/admin`.
 
 **Architecture chosen (all user-confirmed):**
 
@@ -42,7 +42,7 @@ NUXT_GITHUB_BRANCH=main
 
 Expose `adminSlug` to client via `runtimeConfig.public` so the navbar/middleware can read it on the client. Everything else stays server-only.
 
-Create a GitHub OAuth App at `Settings → Developer settings → OAuth Apps` with callback `https://adiaryasuta.vercel.app/auth/github` (nuxt-auth-utils convention).
+Create a GitHub OAuth App at `Settings → Developer settings → OAuth Apps` with callback `https://adiaryasuta.dev/auth/github` (nuxt-auth-utils convention).
 
 ---
 
@@ -181,8 +181,8 @@ New file `data/seo.json`:
 ```json
 {
   "siteName": "Adi Aryasuta",
-  "siteUrl": "https://adiaryasuta.vercel.app",
-  "defaultOgImage": "https://adiaryasuta.vercel.app/assets/imgs/adiaryasuta.jpg",
+  "siteUrl": "https://adiaryasuta.dev",
+  "defaultOgImage": "https://adiaryasuta.dev/assets/imgs/adiaryasuta.jpg",
   "themeColor": "#0284c7",
   "twitterHandle": ""
 }
