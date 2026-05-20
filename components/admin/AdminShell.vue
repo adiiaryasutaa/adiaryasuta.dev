@@ -1,20 +1,34 @@
 <script setup lang="ts">
+import {
+  HomeIcon,
+  FolderIcon,
+  BoltIcon,
+  CpuChipIcon,
+  WrenchScrewdriverIcon,
+  BriefcaseIcon,
+  UsersIcon,
+  DocumentTextIcon,
+  MagnifyingGlassIcon,
+  GlobeAltIcon,
+  Bars3Icon,
+} from "@heroicons/vue/24/outline";
+
 const route = useRoute();
 const { user, clear } = useUserSession();
 const cfg = useRuntimeConfig();
 const slug = cfg.public.adminSlug;
 
 const nav = [
-  { label: "Dashboard", to: `/${slug}`, icon: "🏠" },
-  { label: "Projects", to: `/${slug}/projects`, icon: "🗂️" },
-  { label: "Skills", to: `/${slug}/skills`, icon: "⚡" },
-  { label: "Tech", to: `/${slug}/tech`, icon: "🔧" },
-  { label: "Tools", to: `/${slug}/tools`, icon: "🛠️" },
-  { label: "Experiences", to: `/${slug}/experiences`, icon: "💼" },
-  { label: "Friends", to: `/${slug}/friends`, icon: "👥" },
-  { label: "Blog", to: `/${slug}/blog`, icon: "📝" },
-  { label: "SEO", to: `/${slug}/seo`, icon: "🔍" },
-  { label: "i18n", to: `/${slug}/i18n`, icon: "🌐" },
+  { label: "Dashboard", to: `/${slug}`, icon: HomeIcon },
+  { label: "Projects", to: `/${slug}/projects`, icon: FolderIcon },
+  { label: "Skills", to: `/${slug}/skills`, icon: BoltIcon },
+  { label: "Tech", to: `/${slug}/tech`, icon: CpuChipIcon },
+  { label: "Tools", to: `/${slug}/tools`, icon: WrenchScrewdriverIcon },
+  { label: "Experiences", to: `/${slug}/experiences`, icon: BriefcaseIcon },
+  { label: "Friends", to: `/${slug}/friends`, icon: UsersIcon },
+  { label: "Blog", to: `/${slug}/blog`, icon: DocumentTextIcon },
+  { label: "SEO", to: `/${slug}/seo`, icon: MagnifyingGlassIcon },
+  { label: "i18n", to: `/${slug}/i18n`, icon: GlobeAltIcon },
 ];
 
 async function logout() {
@@ -37,7 +51,7 @@ const sidebarOpen = ref(false);
           class="rounded p-1 text-gray-500 hover:bg-gray-100 lg:hidden dark:hover:bg-gray-800"
           @click="sidebarOpen = !sidebarOpen"
         >
-          ☰
+          <Bars3Icon class="h-5 w-5" />
         </button>
         <span class="font-semibold text-gray-900 dark:text-gray-100">Admin Panel</span>
       </div>
@@ -76,7 +90,7 @@ const sidebarOpen = ref(false);
               route.path === item.to || (item.to !== `/${slug}` && route.path.startsWith(item.to)),
           }"
         >
-          <span>{{ item.icon }}</span>
+          <component :is="item.icon" class="h-4 w-4 shrink-0" />
           <span>{{ item.label }}</span>
         </NuxtLink>
       </nav>
