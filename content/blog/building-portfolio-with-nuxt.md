@@ -3,9 +3,8 @@ title: "Building a Portfolio Website with Nuxt 4"
 description: "A step-by-step guide on how I built my personal portfolio using Nuxt 4, Vue 3, and TailwindCSS 4 — from project setup to deployment on Vercel."
 date: "2026-04-20"
 tags: ["Nuxt", "Vue", "TailwindCSS", "Tutorial"]
+cover: "https://images.unsplash.com/photo-1773332611628-9e1bdce4881b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
-# Test
-
 ## Getting Started
 
 Setting up a Nuxt 4 project is straightforward. Run the following command to scaffold a new app:
