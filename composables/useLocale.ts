@@ -1,22 +1,20 @@
 export const useLocale = () => {
   const { locale, setLocale } = useI18n();
+  const switchLocalePath = useSwitchLocalePath();
 
-  let cookieExpires = new Date();
+  const cookieExpires = new Date();
   cookieExpires.setFullYear(cookieExpires.getFullYear() + 1);
 
   const localeFromCookie = useCookie<string>('locale', {
     default: () => 'en',
-    watch: true,
-    secure: true,
     expires: cookieExpires,
   });
 
-  setLocale(localeFromCookie.value);
-
   const switchLocale = () => {
-    localeFromCookie.value = locale.value === 'en' ? 'id' : 'en';
-
-    setLocale(localeFromCookie.value);
+    const next = locale.value === 'en' ? 'id' : 'en';
+    localeFromCookie.value = next;
+    setLocale(next);
+    navigateTo(switchLocalePath(next));
   };
 
   return { locale, switchLocale };

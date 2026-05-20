@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import HighlightSkillCard from "~/components/cards/HighlightTechCard.vue";
-import SkillCard from "@/components/cards/SkillCard.vue";
 import { allHighlightSkills, allOtherSkills } from "@/models/skill";
 
 const highlightSkills = allHighlightSkills();
@@ -16,7 +14,7 @@ const otherSkills = allOtherSkills();
       <div class="flex flex-col gap-2">
         <h1 class="text-gray-900 text-2xl font-medium text-left dark:text-gray-100">Highlight</h1>
         <div class="flex flex-col gap-4">
-          <HighlightSkillCard v-for="skill in highlightSkills" :skill="skill" />
+          <HighlightTechCard v-for="skill in highlightSkills" :skill="skill" />
         </div>
       </div>
       <div class="flex flex-col gap-2">

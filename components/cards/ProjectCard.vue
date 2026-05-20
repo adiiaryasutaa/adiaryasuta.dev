@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { GlobeAltIcon } from "@heroicons/vue/24/outline";
-import GithubIcon from "@/components/icons/GithubIcon.vue";
-import Card from "@/components/cards/Card.vue";
 import type { Project } from "@/models/project";
 
 interface Props {
@@ -12,13 +10,13 @@ const { project } = defineProps<Props>();
 </script>
 
 <template>
-  <Card>
+  <Card class="transition-colors hover:border-primary hover:bg-primary-tint active:border-primary active:bg-primary">
     <div class="flex flex-col gap-4 md:flex-row">
-      <div class="shrink-0 self-start">
+      <div class="shrink-0 w-full md:w-48">
         <img
           :src="project.cover ?? 'src/assets/imgs/projects/no-image.png'"
           :alt="project.name"
-          class="w-full max-h-60 md:h-60 rounded-lg object-cover border-2 border-gray-400 dark:border-gray-600"
+          class="w-full h-48 rounded-lg object-cover border border-gray-400 dark:border-gray-600"
         />
       </div>
       <div class="flex flex-col gap-3 grow">

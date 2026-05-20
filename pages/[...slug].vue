@@ -27,7 +27,7 @@ useHeadSafe({
       <div class="flex flex-col items-center justify-center">
         <NuxtLink
           to="/"
-          class="px-4 py-2 text-sm font-medium border border-gray-400 rounded-lg hover:bg-gray-100 active:bg-gray-200 focus:ring-2 focus:ring-gray-200 dark:border-gray-600 dark:hover:bg-gray-900 dark:active:bg-gray-800 dark:focus:ring-gray-800 dark:text-gray-50"
+          class="px-4 py-2 text-sm font-medium border border-gray-400 rounded-lg hover:text-primary hover:border-primary hover:bg-gray-100 active:bg-gray-200 focus:ring-2 focus:ring-primary/30 dark:border-gray-600 dark:hover:text-primary dark:hover:border-primary dark:hover:bg-gray-900 dark:active:bg-gray-800 dark:text-gray-50"
         >
           Back to home
         </NuxtLink>

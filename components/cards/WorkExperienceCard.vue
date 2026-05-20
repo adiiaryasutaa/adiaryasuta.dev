@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Card from "@/components/cards/Card.vue";
-import Paragraph from "@/components/Paragraph.vue";
 import type { Work } from "@/models/experience/work";
 
 interface Props {
@@ -11,7 +9,7 @@ const { work } = defineProps<Props>();
 </script>
 
 <template>
-  <Card>
+  <Card class="transition-colors hover:border-primary hover:bg-primary-tint active:border-primary active:bg-primary">
     <div class="flex flex-col gap-4 sm:flex-row">
       <div class="shrink-0 self-start">
         <img
@@ -32,17 +30,9 @@ const { work } = defineProps<Props>();
             {{ work.company }}
           </h3>
           <div class="flex flex-col sm:flex-row sm:items-center">
-            <p
-              class="text-gray-900 text-sm text-left sm:after:content-['·'] sm:after:mx-2 dark:text-gray-100"
-            >
-              {{ `${work.start.month} ${work.start.year}` }} -
-              {{
-                work.current
-                  ? "Present"
-                  : `${work.end?.month}
-              ${work.end?.year}`
-              }}
-            </p>
+            <span class="sm:after:content-['·'] sm:after:mx-2">
+              <TimeRange :start="work.start" :end="work.end" :current="work.current" />
+            </span>
             <p class="text-gray-900 text-sm text-left dark:text-gray-100">
               {{ work.employment }}
             </p>

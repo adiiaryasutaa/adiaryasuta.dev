@@ -1,16 +1,21 @@
 <script setup lang="ts">
-import MainSection from '@/components/MainSection.vue';
-import ProjectSection from "~/components/sections/ProjectSection.vue";
 
 const { t } = useI18n();
 
-useHeadSafe({
+useSeoMeta({
   title: () => t('navbar.project'),
+  description: () => t('meta.project-description'),
+  ogTitle: () => t('navbar.project'),
+  ogDescription: () => t('meta.project-description'),
+  ogType: 'website',
+  ogUrl: 'https://adiaryasuta.vercel.app/project',
+  twitterTitle: () => t('navbar.project'),
+  twitterDescription: () => t('meta.project-description'),
 });
 </script>
 
 <template>
   <MainSection>
-    <ProjectSection/>
+    <ProjectSection />
   </MainSection>
 </template>

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ProjectCard from "~/components/cards/ProjectCard.vue";
-
 const projects = useProject();
 </script>
 

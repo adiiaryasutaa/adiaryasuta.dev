@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Card from '~/components/cards/Card.vue';
 import type { Education } from '~/models/experience/education';
 
 interface Props {
@@ -10,7 +9,7 @@ const { education } = defineProps<Props>();
 </script>
 
 <template>
-  <Card>
+  <Card class="transition-colors hover:border-primary hover:bg-primary-tint active:border-primary active:bg-primary">
     <div class="flex flex-col gap-4 sm:flex-row">
       <div class="shrink-0 self-start">
         <img src="https://placehold.co/100x100" :alt="education.school" :title="education.school"

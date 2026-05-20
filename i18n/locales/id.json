@@ -4,10 +4,15 @@
     "home": "Beranda",
     "about": "Tentang",
     "project": "Proyek",
-    "blog": "Blog"
+    "blog": "Blog",
+    "friend": "Teman"
   },
   "soon": "Segera",
+  "common": {
+    "present": "Sekarang"
+  },
   "home": {
+    "brand": "Full-Stack Web Developer & Mobile Developer",
     "description": "Seorang <span class=\"font-semibold\">Software Developer</span> yang senang membuat produk yang bermanfaat",
     "see-more": "Lebih banyak tentang saya"
   },
@@ -22,7 +27,11 @@
       "Poto ini dipotret oleh <a class=\"text-slate-600 font-semibold hover:underline dark:text-slate-400\" href=\"https://snstechbali.github.io/santinrswri/\" target=\"_blank\">Santi Nareswari</a>"
     ],
     "skill-section-title": "Keahlian",
-    "tool-section-title": "Alat"
+    "tool-section-title": "Alat",
+    "experience-section-title": "Pengalaman",
+    "experience-work": "Pekerjaan",
+    "experience-volunteer": "Relawan",
+    "experience-education": "Pendidikan"
   },
   "project": {
     "section-title": "Proyek",
@@ -70,6 +79,22 @@
       "title": "Pembayaran SPP",
       "description": "Proyek Uji Kompetensi 2023"
     }
+  },
+  "friend": {
+    "section-title": "Teman"
+  },
+  "blog": {
+    "section-title": "Blog",
+    "back": "Blog",
+    "min-read": "mnt baca",
+    "more-posts": "Tulisan Lainnya"
+  },
+  "meta": {
+    "description": "Full-Stack Web & Mobile Developer dari Bali, Indonesia. Membangun aplikasi web modern dengan Vue, Nuxt, dan Laravel.",
+    "about-description": "Kenali Adi Aryasuta — seorang Full-Stack Developer dengan pengalaman di Vue, Nuxt, Laravel, dan pengembangan mobile.",
+    "project-description": "Jelajahi proyek-proyek yang dibangun oleh Adi Aryasuta, dari aplikasi web hingga aplikasi mobile.",
+    "blog-description": "Artikel tentang pengembangan web, Vue, Nuxt, TypeScript, dan rekayasa perangkat lunak oleh Adi Aryasuta.",
+    "friend-description": "Teman dan kolega Adi Aryasuta dalam komunitas pengembangan perangkat lunak."
   },
   "footer": {
     "copyright": "© {year} Adi Aryasuta",

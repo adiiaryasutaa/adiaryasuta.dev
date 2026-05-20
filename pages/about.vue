@@ -1,13 +1,16 @@
 <script setup lang="ts">
-import MainSection from '@/components/MainSection.vue';
-import AboutSection from '@/components/sections/AboutSection.vue';
-import ExperienceSection from '@/components/sections/ExperienceSection.vue';
-import TechStackSection from '@/components/sections/TechStackSection.vue';
 
 const { t } = useI18n();
 
-useHeadSafe({
+useSeoMeta({
   title: () => t('navbar.about'),
+  description: () => t('meta.about-description'),
+  ogTitle: () => t('navbar.about'),
+  ogDescription: () => t('meta.about-description'),
+  ogType: 'website',
+  ogUrl: 'https://adiaryasuta.vercel.app/about',
+  twitterTitle: () => t('navbar.about'),
+  twitterDescription: () => t('meta.about-description'),
 });
 </script>
 

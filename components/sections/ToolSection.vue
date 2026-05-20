@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import Container from '@/components/Container.vue';
-import ContainerTitle from '@/components/ContainerTitle.vue';
-import ToolCard from "~/components/cards/ToolCard.vue";
-
 const tools = useTool();
 </script>
 

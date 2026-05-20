@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import HighlightTechCard from "~/components/cards/HighlightTechCard.vue";
-import TechChip from "~/components/TechChip.vue";
 import { allTech } from "@/models/tech";
 
 const techs = allTech();

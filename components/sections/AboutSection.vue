@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Paragraph from "../Paragraph.vue";
 </script>
 
 <template>
@@ -9,7 +8,7 @@ import Paragraph from "../Paragraph.vue";
         <img
           src="/assets/images/adiaryasuta.jpg"
           :alt="$t('brand')"
-          class="rounded-lg w-60 h-60 border-2 border-gray-400 xl:w-72 xl:h-72 object-cover dark:border-gray-600"
+          class="rounded-lg w-60 h-60 border border-gray-400 xl:w-72 xl:h-72 object-cover dark:border-gray-600"
         />
       </div>
       <div

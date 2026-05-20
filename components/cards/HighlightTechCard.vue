@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Card from '@/components/cards/Card.vue';
 import type { Tech } from '@/models/tech';
 
 interface Props {
@@ -10,7 +9,7 @@ const { tech } = defineProps<Props>();
 </script>
 
 <template>
-  <Card>
+  <Card class="transition-colors hover:border-primary hover:bg-primary-tint active:border-primary active:bg-primary">
     <div class="flex flex-col gap-4 sm:flex-row">
       <div class="shrink-0 self-start">
         <img :src="tech.logo" :alt="tech.name" class="w-20 h-20 rounded-lg">

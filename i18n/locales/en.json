@@ -13,6 +13,9 @@
     "description": "Hello I'm, Adi Aryasuta, also known as Adi. I'm form Denpasar, Bali, Indonesia. I specialize in full-stack web developer, handling everything from front-end and back-end to cloud infrastructure. My toolkit includes TypeScript, Next.js, Nest.js, and more",
     "see-more": "More about me"
   },
+  "common": {
+    "present": "Present"
+  },
   "about": {
     "description": [
       "Hello! I'm Gung Adi, a multi-disciplinary developer with expertise in Full-Stack Web, Mobile, and Game Development, based on the beautiful island of Bali 🇮🇩.",
@@ -24,7 +27,11 @@
       "This photo was taken by <a class=\"text-slate-600 font-semibold hover:underline dark:text-slate-400\" href=\"https://snstechbali.github.io/santinrswri/\" target=\"_blank\">Santi Nareswari</a>"
     ],
     "skill-section-title": "Skills",
-    "tool-section-title": "Tools"
+    "tool-section-title": "Tools",
+    "experience-section-title": "Experiences",
+    "experience-work": "Work",
+    "experience-volunteer": "Volunteer",
+    "experience-education": "Education"
   },
   "project": {
     "section-title": "Project",
@@ -72,6 +79,22 @@
       "title": "Pembayaran SPP",
       "description": "Competency test project 2023"
     }
+  },
+  "friend": {
+    "section-title": "Friends"
+  },
+  "blog": {
+    "section-title": "Blog",
+    "back": "Blog",
+    "min-read": "min read",
+    "more-posts": "More Posts"
+  },
+  "meta": {
+    "description": "Full-Stack Web & Mobile Developer based in Bali, Indonesia. Building modern web applications with Vue, Nuxt, and Laravel.",
+    "about-description": "Learn about Adi Aryasuta — a Full-Stack Developer with experience in Vue, Nuxt, Laravel, and mobile development.",
+    "project-description": "Explore projects built by Adi Aryasuta, from web apps to mobile applications.",
+    "blog-description": "Articles on web development, Vue, Nuxt, TypeScript, and software engineering by Adi Aryasuta.",
+    "friend-description": "Friends and colleagues of Adi Aryasuta in the software development community."
   },
   "footer": {
     "copyright": "© {year} Adi Aryasuta. All rights reserved.",

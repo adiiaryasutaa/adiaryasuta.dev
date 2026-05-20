@@ -46,6 +46,9 @@ pnpm generate   # Generate static site
 - Theme toggling via `useTheme` composable
 - Language switching via `useLocale` composable
 
-### P.S.:
-If there's action can be done by excecuting commands, do it. Don't generate by your self.
-Do with best practices. Ask me anything about something unclear. Don't hallucinating.
+## Rules
+
+1. **No hallucinating** — never guess, invent, or assume details about the codebase, APIs, or behavior. Read the actual files first.
+2. **Ask before assuming** — if anything is unclear, ask. Prefer asking many specific questions over producing a hallucinated response.
+3. **Best practices always** — follow language, framework, and security best practices at all times.
+4. **Prefer commands over generation** — if an action can be done by executing a command, run it instead of generating the output manually.
