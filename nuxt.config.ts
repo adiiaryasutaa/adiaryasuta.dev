@@ -49,7 +49,20 @@ export default defineNuxtConfig({
     ],
   },
 
-  modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxtjs/color-mode", "@nuxtjs/sitemap"],
+  modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxtjs/color-mode", "@nuxtjs/sitemap", "nuxt-auth-utils"],
+
+  runtimeConfig: {
+    sessionPassword: "",
+    adminGithubLogin: "",
+    adminSlug: "",
+    githubPat: "",
+    githubRepoOwner: "",
+    githubRepoName: "",
+    githubBranch: "main",
+    public: {
+      adminSlug: "",
+    },
+  },
 
   site: {
     url: "https://adiaryasuta.vercel.app",
@@ -67,6 +80,7 @@ export default defineNuxtConfig({
     { path: "~/components/sections", pathPrefix: false },
     { path: "~/components/layout", pathPrefix: false },
     { path: "~/components/content", pathPrefix: false },
+    { path: "~/components/admin", prefix: "Admin" },
   ],
 
   content: {
