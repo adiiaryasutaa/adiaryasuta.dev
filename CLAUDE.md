@@ -114,3 +114,4 @@ GitHub OAuth App callback: `https://adiaryasuta.dev/auth/github`
 2. **Ask before assuming** — if anything is unclear, ask. Prefer asking many specific questions over producing a hallucinated response.
 3. **Best practices always** — follow language, framework, and security best practices at all times.
 4. **Prefer commands over generation** — if an action can be done by executing a command, run it instead of generating the output manually.
+5. **Always format after editing** — run `pnpm format` after every file create or edit.

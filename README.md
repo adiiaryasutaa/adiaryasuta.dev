@@ -1,75 +1,105 @@
-# Nuxt 3 Minimal Starter
+# adiaryasuta.dev
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Personal portfolio website built with Nuxt 4, Vue 3, and TailwindCSS 4. Features a git-backed admin panel for managing all content without touching code.
 
-## Setup
+**Live site:** [adiaryasuta.dev](https://adiaryasuta.dev)
 
-Make sure to install the dependencies:
+## Built with
+
+| | |
+|---|---|
+| [Adi Aryasuta](https://github.com/adiiaryasutaa) | Author |
+| [Claude](https://claude.ai/code) | Co-developer |
+
+## Tech Stack
+
+- **Framework:** Nuxt 4 + Vue 3
+- **Styling:** TailwindCSS 4
+- **Content:** [@nuxt/content](https://content.nuxt.com) (blog markdown)
+- **i18n:** [@nuxtjs/i18n](https://i18n.nuxtjs.org) (EN / ID)
+- **Auth:** [nuxt-auth-utils](https://github.com/Atinux/nuxt-auth-utils) (GitHub OAuth)
+- **Deployment:** Vercel
+
+## Getting Started
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+pnpm dev
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Copy `.env.example` to `.env` and fill in the values:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+cp .env.example .env
 ```
 
-## Production
+## Environment Variables
 
-Build the application for production:
+| Variable | Description |
+|---|---|
+| `NUXT_SESSION_PASSWORD` | 32+ char secret for sealed cookies (`openssl rand -base64 32`) |
+| `NUXT_OAUTH_GITHUB_CLIENT_ID` | GitHub OAuth App client ID |
+| `NUXT_OAUTH_GITHUB_CLIENT_SECRET` | GitHub OAuth App client secret |
+| `NUXT_OAUTH_GITHUB_REDIRECT_URL` | OAuth callback URL (local: `http://localhost:3000/auth/github`) |
+| `NUXT_ADMIN_GITHUB_LOGIN` | GitHub username allowed to access admin |
+| `NUXT_ADMIN_SLUG` | Secret URL slug for admin panel (e.g. `openssl rand -hex 6`) |
+| `NUXT_PUBLIC_ADMIN_SLUG` | Same value as `NUXT_ADMIN_SLUG` (exposed to client) |
+| `NUXT_GITHUB_PAT` | Fine-grained PAT with Contents read+write on this repo |
+| `NUXT_GITHUB_REPO_OWNER` | GitHub username |
+| `NUXT_GITHUB_REPO_NAME` | Repository name |
+| `NUXT_GITHUB_BRANCH` | Branch to commit admin edits to (`main` for production) |
+
+## Admin Panel
+
+The admin panel lives at `/{NUXT_ADMIN_SLUG}` — a secret URL slug set via env. It is never linked from the public site.
+
+- **Auth:** Sign in with GitHub (only the allowlisted login can access)
+- **Storage:** Edits commit directly to GitHub via the API — no database. Vercel auto-redeploys on every commit (~30s).
+- **In development:** reads and writes local files directly (no GitHub API calls)
+- **In production:** commits changes to the configured branch via Octokit
+
+### Managed content
+
+- Projects, Skills, Tech stack, Tools, Experiences, Friends (`data/*.json`)
+- Blog posts (`content/blog/*.md`)
+- i18n strings (`i18n/locales/{en,id}.json`)
+- SEO defaults (`data/seo.json`)
+
+## Project Structure
+
+```
+pages/              # Routes (including [adminSlug]/* for admin)
+components/
+  ui/               # Atoms
+  cards/            # Molecules
+  sections/         # Organisms
+  admin/            # Admin UI (AdminShell, SaveBar)
+composables/        # useProject, useTool, useSkill, useFriend, useAdminResource
+data/               # JSON content files
+content/blog/       # Markdown blog posts
+models/             # TypeScript interfaces + data loader functions
+server/
+  api/admin/        # Admin CRUD endpoints
+  routes/auth/      # GitHub OAuth handler
+  utils/            # github.ts (Octokit wrapper), admin.ts (auth helper)
+i18n/locales/       # en.json, id.json
+```
+
+## Scripts
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+pnpm dev        # Development server at http://localhost:3000
+pnpm build      # Production build
+pnpm preview    # Preview production build locally
+pnpm generate   # Static site generation
+pnpm format     # Format with Prettier
 ```
 
-Locally preview production build:
+## Branching
 
-```bash
-# npm
-npm run preview
+| Branch | Purpose |
+|---|---|
+| `main` | Production — deploys to [adiaryasuta.dev](https://adiaryasuta.dev) |
+| `dev` | Development — deploys to Vercel preview URL |
 
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+All work happens on `dev`. Open a PR to merge into `main` for production.
