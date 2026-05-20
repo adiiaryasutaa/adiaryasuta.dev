@@ -33,53 +33,6 @@
     "experience-volunteer": "Relawan",
     "experience-education": "Pendidikan"
   },
-  "project": {
-    "section-title": "Proyek",
-    "erpeelone-58": {
-      "title": "Erpeelone 58",
-      "description": "Official website XI RPL 1 | ERPEELONE"
-    },
-    "sejarahku": {
-      "title": "Sejarahku",
-      "description": "Sebuah website untuk mempelajari sejarah"
-    },
-    "skenmath": {
-      "title": "SkenMath",
-      "description": "Belajar matematika untuk SMA/SMK"
-    },
-    "get-anime-quote": {
-      "title": "Get Anime Quote",
-      "description": "Dapatkan Kutipan atau quote anime keren"
-    },
-    "aplikasi-kasir": {
-      "title": "Aplikasi Kasir",
-      "description": "Proyek mata pelajaran Pemrograman Berorientasi Objek (PBO)"
-    },
-    "rps-game": {
-      "title": "RPS Game",
-      "description": "Sebuah game yang saya buat saat menunggu guru selesai rapat"
-    },
-    "reaction-timer": {
-      "title": "Reaction Timer",
-      "description": "Uji kecepatan reaksimu"
-    },
-    "hub-pasien": {
-      "title": "Hub Pasien",
-      "description": "Landing page Hub Pasien"
-    },
-    "blog-hub-pasien": {
-      "title": "Blog Hub Pasien",
-      "description": "Aplikasi blog Hub Pasien"
-    },
-    "pengaduan-masyarakat": {
-      "title": "Pengaduan Masyarakat",
-      "description": "Aplikasi website untuk latihan sebelum Uji Kompetensi 2023"
-    },
-    "pembayaran-spp": {
-      "title": "Pembayaran SPP",
-      "description": "Proyek Uji Kompetensi 2023"
-    }
-  },
   "friend": {
     "section-title": "Teman"
   },
@@ -100,5 +53,8 @@
     "copyright": "© {year} Adi Aryasuta",
     "technology": "Built with <span class=\"font-semibold\">Vue 3</span> and <span class=\"font-semibold\">TailwindCSS</span>",
     "host": "Hosted on <span class=\"font-semibold\">Vercel</span>"
+  },
+  "project": {
+    "section-title": "Proyek"
   }
 }

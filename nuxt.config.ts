@@ -49,7 +49,13 @@ export default defineNuxtConfig({
     ],
   },
 
-  modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxtjs/color-mode", "@nuxtjs/sitemap", "nuxt-auth-utils"],
+  modules: [
+    "@nuxt/content",
+    "@nuxtjs/i18n",
+    "@nuxtjs/color-mode",
+    "@nuxtjs/sitemap",
+    "nuxt-auth-utils",
+  ],
 
   runtimeConfig: {
     sessionPassword: "",

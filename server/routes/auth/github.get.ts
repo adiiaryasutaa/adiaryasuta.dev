@@ -1,6 +1,7 @@
 export default defineOAuthGitHubEventHandler({
   config: {
     scope: ["read:user"],
+    redirectURL: process.env.NUXT_OAUTH_GITHUB_REDIRECT_URL,
   },
   async onSuccess(event, { user }) {
     const cfg = useRuntimeConfig();

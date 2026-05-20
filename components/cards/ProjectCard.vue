@@ -16,7 +16,7 @@ const { project } = defineProps<Props>();
     <div class="flex flex-col gap-4 md:flex-row">
       <div class="w-full shrink-0 md:w-48">
         <img
-          :src="project.cover ?? 'src/assets/imgs/projects/no-image.png'"
+          :src="project.cover ?? '/assets/imgs/projects/no-image.png'"
           :alt="project.name"
           class="h-48 w-full rounded-lg border border-gray-400 object-cover dark:border-gray-600"
         />

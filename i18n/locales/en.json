@@ -33,53 +33,6 @@
     "experience-volunteer": "Volunteer",
     "experience-education": "Education"
   },
-  "project": {
-    "section-title": "Project",
-    "erpeelone-58": {
-      "title": "Erpeelone 58",
-      "description": "Official website XI RPL 1 | ERPEELONE"
-    },
-    "sejarahku": {
-      "title": "Sejarahku",
-      "description": "A website for learning about history"
-    },
-    "skenmath": {
-      "title": "SkenMath",
-      "description": "Learn math for senior high school students"
-    },
-    "get-anime-quote": {
-      "title": "Get Anime Quote",
-      "description": "Get cool anime quote"
-    },
-    "aplikasi-kasir": {
-      "title": "Aplikasi Kasir",
-      "description": "Object-oriented programming subject project"
-    },
-    "rps-game": {
-      "title": "RPS Game",
-      "description": "Game that I made, while waiting for the teacher who was in a meeting"
-    },
-    "reaction-timer": {
-      "title": "Reaction Timer",
-      "description": "Test your reaction speed"
-    },
-    "hub-pasien": {
-      "title": "Hub Pasien",
-      "description": "Landing page Hub Pasien"
-    },
-    "blog-hub-pasien": {
-      "title": "Blog Hub Pasien",
-      "description": "Blog for Hub Pasien"
-    },
-    "pengaduan-masyarakat": {
-      "title": "Pengaduan Masyarakat",
-      "description": "Web application for training before the 2023 Competency Test"
-    },
-    "pembayaran-spp": {
-      "title": "Pembayaran SPP",
-      "description": "Competency test project 2023"
-    }
-  },
   "friend": {
     "section-title": "Friends"
   },
@@ -100,5 +53,8 @@
     "copyright": "© {year} Adi Aryasuta. All rights reserved.",
     "technology": "Built with <span class=\"font-semibold\">Vue 3</span> and <span class=\"font-semibold\">TailwindCSS</span>",
     "host": "Hosted on <span class=\"font-semibold\">Vercel</span>"
+  },
+  "project": {
+    "section-title": "Project"
   }
 }

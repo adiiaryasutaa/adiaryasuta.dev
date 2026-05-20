@@ -1,6 +1,37 @@
 import { Octokit } from "@octokit/rest";
+import { readFileSync, writeFileSync, unlinkSync, readdirSync, statSync } from "node:fs";
+import { join } from "node:path";
 
-export function useGitHub() {
+function useLocalFS() {
+  const root = process.cwd();
+
+  return {
+    async getFile(path: string) {
+      const content = readFileSync(join(root, path), "utf-8");
+      return { sha: "", content };
+    },
+
+    async listDir(path: string) {
+      const entries = readdirSync(join(root, path));
+      return entries.map((name) => {
+        const stat = statSync(join(root, path, name));
+        return { name, type: stat.isDirectory() ? "dir" : "file", path: `${path}/${name}` };
+      });
+    },
+
+    async putFile(path: string, content: string, _message: string, _sha?: string) {
+      writeFileSync(join(root, path), content, "utf-8");
+      return { data: { commit: { sha: "" } } };
+    },
+
+    async deleteFile(path: string, _message: string, _sha: string) {
+      unlinkSync(join(root, path));
+      return { data: {} };
+    },
+  };
+}
+
+function useRemoteGitHub() {
   const cfg = useRuntimeConfig();
   const octokit = new Octokit({ auth: cfg.githubPat });
   const owner = cfg.githubRepoOwner;
@@ -39,4 +70,8 @@ export function useGitHub() {
       return octokit.repos.deleteFile({ owner, repo, path, branch, message, sha });
     },
   };
+}
+
+export function useGitHub() {
+  return import.meta.dev ? useLocalFS() : useRemoteGitHub();
 }

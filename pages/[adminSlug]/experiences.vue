@@ -137,7 +137,7 @@ function removeItem(i: number) {
                   activeTab === "work" ? "Company" : "Organization"
                 }}</label>
                 <input
-                  v-model="activeTab === 'work' ? item.company : item.organization"
+                  v-model="item[activeTab === 'work' ? 'company' : 'organization']"
                   class="w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100"
                 />
               </div>

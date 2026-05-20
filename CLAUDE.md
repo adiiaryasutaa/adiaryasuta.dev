@@ -96,7 +96,7 @@ NUXT_ADMIN_GITHUB_LOGIN=adiiaryasutaa
 NUXT_ADMIN_SLUG=                # secret URL slug
 NUXT_GITHUB_PAT=                # fine-grained PAT, contents:write
 NUXT_GITHUB_REPO_OWNER=adiiaryasutaa
-NUXT_GITHUB_REPO_NAME=adiiaryasutaa-web
+NUXT_GITHUB_REPO_NAME=adiaryasuta.dev
 NUXT_GITHUB_BRANCH=main
 ```
 

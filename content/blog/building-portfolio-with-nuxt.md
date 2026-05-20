@@ -1,9 +1,10 @@
 ---
 title: "Building a Portfolio Website with Nuxt 4"
 description: "A step-by-step guide on how I built my personal portfolio using Nuxt 4, Vue 3, and TailwindCSS 4 — from project setup to deployment on Vercel."
-tags: ["Nuxt", "Vue", "TailwindCSS", "Tutorial"]
 date: "2026-04-20"
+tags: ["Nuxt", "Vue", "TailwindCSS", "Tutorial"]
 ---
+# Test
 
 ## Getting Started
 
