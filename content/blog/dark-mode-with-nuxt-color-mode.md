@@ -81,8 +81,8 @@ const { theme, switchTheme } = useTheme();
 
 <template>
   <button @click="switchTheme" aria-label="Toggle theme">
-    <SunIcon v-if="theme.value === 'dark'" class="w-5 h-5" />
-    <MoonIcon v-else class="w-5 h-5" />
+    <SunIcon v-if="theme.value === 'dark'" class="h-5 w-5" />
+    <MoonIcon v-else class="h-5 w-5" />
   </button>
 </template>
 ```

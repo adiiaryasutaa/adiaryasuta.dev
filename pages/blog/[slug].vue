@@ -47,51 +47,59 @@ const formattedDate = computed(() => {
   }).format(new Date(post.value.date));
 });
 
-const OG_IMAGE = 'https://adiaryasuta.vercel.app/assets/imgs/adiaryasuta.jpg';
+const OG_IMAGE = "https://adiaryasuta.vercel.app/assets/imgs/adiaryasuta.jpg";
 
 useSeoMeta({
-  title: () => post.value?.title ?? 'Blog',
-  description: () => post.value?.description ?? '',
-  ogTitle: () => post.value?.title ?? 'Blog',
-  ogDescription: () => post.value?.description ?? '',
-  ogType: 'article',
+  title: () => post.value?.title ?? "Blog",
+  description: () => post.value?.description ?? "",
+  ogTitle: () => post.value?.title ?? "Blog",
+  ogDescription: () => post.value?.description ?? "",
+  ogType: "article",
   ogUrl: () => `https://adiaryasuta.vercel.app/blog/${slug}`,
   ogImage: () => post.value?.cover ?? OG_IMAGE,
   articlePublishedTime: () => post.value?.date,
   articleTag: () => post.value?.tags,
-  twitterCard: 'summary_large_image',
-  twitterTitle: () => post.value?.title ?? 'Blog',
-  twitterDescription: () => post.value?.description ?? '',
+  twitterCard: "summary_large_image",
+  twitterTitle: () => post.value?.title ?? "Blog",
+  twitterDescription: () => post.value?.description ?? "",
   twitterImage: () => post.value?.cover ?? OG_IMAGE,
 });
 
 useHead({
-  script: [{
-    type: 'application/ld+json',
-    innerHTML: computed(() => JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      headline: post.value?.title,
-      description: post.value?.description,
-      datePublished: post.value?.date,
-      author: { '@type': 'Person', name: 'Adi Aryasuta', url: 'https://adiaryasuta.vercel.app' },
-      image: post.value?.cover ?? OG_IMAGE,
-    })),
-  }],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: computed(() =>
+        JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: post.value?.title,
+          description: post.value?.description,
+          datePublished: post.value?.date,
+          author: {
+            "@type": "Person",
+            name: "Adi Aryasuta",
+            url: "https://adiaryasuta.vercel.app",
+          },
+          image: post.value?.cover ?? OG_IMAGE,
+        })
+      ),
+    },
+  ],
 });
 </script>
 
 <template>
   <MainSection>
     <div class="container">
-      <div class="max-w-2xl mx-auto flex flex-col gap-6">
+      <div class="mx-auto flex max-w-2xl flex-col gap-6">
         <!-- Back button -->
         <NuxtLink
           to="/blog"
-          class="flex items-center gap-1.5 w-fit text-sm text-gray-500 hover:text-primary active:text-primary dark:text-gray-400 dark:hover:text-primary dark:active:text-primary transition-colors"
+          class="hover:text-primary active:text-primary dark:hover:text-primary dark:active:text-primary flex w-fit items-center gap-1.5 text-sm text-gray-500 transition-colors dark:text-gray-400"
         >
-          <ArrowLeftIcon class="w-4 h-4 shrink-0" />
-          <span>{{ $t('blog.back') }}</span>
+          <ArrowLeftIcon class="h-4 w-4 shrink-0" />
+          <span>{{ $t("blog.back") }}</span>
         </NuxtLink>
 
         <template v-if="post">
@@ -104,7 +112,7 @@ useHead({
           />
           <div
             v-else
-            class="w-full h-64 rounded-lg bg-gray-200 border border-gray-400 dark:bg-gray-800 dark:border-gray-600"
+            class="h-64 w-full rounded-lg border border-gray-400 bg-gray-200 dark:border-gray-600 dark:bg-gray-800"
           />
 
           <!-- Title -->
@@ -114,11 +122,7 @@ useHead({
 
           <!-- Tags -->
           <div class="flex flex-wrap gap-1.5">
-            <TechChip
-              v-for="tag in post.tags"
-              :key="tag"
-              :tech="{ name: tag }"
-            />
+            <TechChip v-for="tag in post.tags" :key="tag" :tech="{ name: tag }" />
           </div>
 
           <!-- Date -->
@@ -128,7 +132,7 @@ useHead({
 
           <!-- Reading time -->
           <p class="text-sm text-gray-500 dark:text-gray-400">
-            {{ readingTime }} {{ $t('blog.min-read') }}
+            {{ readingTime }} {{ $t("blog.min-read") }}
           </p>
 
           <hr class="border-gray-300 dark:border-gray-700" />
@@ -142,14 +146,10 @@ useHead({
           <template v-if="relatedPosts.length">
             <hr class="border-gray-300 dark:border-gray-700" />
             <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100">
-              {{ $t('blog.more-posts') }}
+              {{ $t("blog.more-posts") }}
             </h2>
             <div class="flex flex-col gap-4">
-              <BlogCard
-                v-for="related in relatedPosts"
-                :key="related.path"
-                :post="related"
-              />
+              <BlogCard v-for="related in relatedPosts" :key="related.path" :post="related" />
             </div>
           </template>
         </template>

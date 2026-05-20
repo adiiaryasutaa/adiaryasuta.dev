@@ -64,10 +64,8 @@ useHeadSafe({ title: "Home" });
 </script>
 
 <template>
-  <main class="min-h-screen flex items-center justify-center">
-    <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100">
-      Hello, World!
-    </h1>
+  <main class="flex min-h-screen items-center justify-center">
+    <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100">Hello, World!</h1>
   </main>
 </template>
 ```
@@ -100,8 +98,7 @@ export const useTheme = () => {
   const colorMode = useColorMode();
 
   const switchTheme = () => {
-    colorMode.preference =
-      colorMode.value === "light" ? "dark" : "light";
+    colorMode.preference = colorMode.value === "light" ? "dark" : "light";
   };
 
   return { theme: colorMode, switchTheme };

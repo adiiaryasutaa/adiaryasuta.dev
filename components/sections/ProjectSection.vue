@@ -5,10 +5,10 @@ const projects = useProject();
 <template>
   <Container>
     <template #title>
-      <ContainerTitle>{{ $t('project.section-title') }}</ContainerTitle>
+      <ContainerTitle>{{ $t("project.section-title") }}</ContainerTitle>
     </template>
-    <div class="flex flex-col gap-4 mt-4">
-      <ProjectCard v-for="project in projects" :project="project"/>
+    <div class="mt-4 flex flex-col gap-4">
+      <ProjectCard v-for="project in projects" :project="project" />
     </div>
   </Container>
 </template>

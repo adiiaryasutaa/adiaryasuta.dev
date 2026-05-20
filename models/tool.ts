@@ -1,8 +1,8 @@
-import tools from '@/data/tool.json';
+import tools from "@/data/tool.json";
 
 export interface Tool {
-  logo: string,
-  name: string,
+  logo: string;
+  name: string;
 }
 
 export const allTools: () => Tool[] = (): Tool[] => {

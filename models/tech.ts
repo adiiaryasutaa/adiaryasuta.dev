@@ -1,4 +1,4 @@
-import tech from '@/data/tech.json';
+import tech from "@/data/tech.json";
 
 export interface Tech {
   logo: string;

@@ -35,11 +35,17 @@ export default defineNuxtConfig({
       { name: "theme-color", content: "#0284c7" },
       { name: "robots", content: "index, follow" },
       { property: "og:site_name", content: "Adi Aryasuta" },
-      { property: "og:image", content: "https://adiaryasuta.vercel.app/assets/imgs/adiaryasuta.jpg" },
+      {
+        property: "og:image",
+        content: "https://adiaryasuta.vercel.app/assets/imgs/adiaryasuta.jpg",
+      },
       { property: "og:image:width", content: "400" },
       { property: "og:image:height", content: "400" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:image", content: "https://adiaryasuta.vercel.app/assets/imgs/adiaryasuta.jpg" },
+      {
+        name: "twitter:image",
+        content: "https://adiaryasuta.vercel.app/assets/imgs/adiaryasuta.jpg",
+      },
     ],
   },
 
@@ -55,20 +61,29 @@ export default defineNuxtConfig({
   },
 
   components: [
-    { path: '~/components/ui', pathPrefix: false },
-    { path: '~/components/ui/icons', pathPrefix: false },
-    { path: '~/components/cards', pathPrefix: false },
-    { path: '~/components/sections', pathPrefix: false },
-    { path: '~/components/layout', pathPrefix: false },
-    { path: '~/components/content', pathPrefix: false },
+    { path: "~/components/ui", pathPrefix: false },
+    { path: "~/components/ui/icons", pathPrefix: false },
+    { path: "~/components/cards", pathPrefix: false },
+    { path: "~/components/sections", pathPrefix: false },
+    { path: "~/components/layout", pathPrefix: false },
+    { path: "~/components/content", pathPrefix: false },
   ],
 
   content: {
     highlight: {
       theme: "github-dark",
       langs: [
-        "bash", "typescript", "javascript", "vue", "css", "html",
-        "php", "java", "json", "markdown", "sql",
+        "bash",
+        "typescript",
+        "javascript",
+        "vue",
+        "css",
+        "html",
+        "php",
+        "java",
+        "json",
+        "markdown",
+        "sql",
       ],
     },
   },

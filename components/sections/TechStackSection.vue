@@ -16,22 +16,14 @@ const techs = allTech();
           v-for="tech in Object.keys(techs) as (keyof typeof techs)[]"
           :key="tech"
         >
-          <h2
-            class="capitalize text-gray-900 text-2xl font-medium text-left dark:text-gray-100"
-          >
+          <h2 class="text-left text-2xl font-medium text-gray-900 capitalize dark:text-gray-100">
             {{ tech }}
           </h2>
           <div class="flex flex-col gap-4">
-            <HighlightTechCard
-              v-for="t in techs[tech].filter((t) => t.highlight)"
-              :tech="t"
-            />
+            <HighlightTechCard v-for="t in techs[tech].filter((t) => t.highlight)" :tech="t" />
           </div>
-          <div class="flex flex-row gap-4 flex-wrap mt-4">
-            <TechChip
-              v-for="t in techs[tech].filter((t) => !t.highlight)"
-              :tech="t"
-            />
+          <div class="mt-4 flex flex-row flex-wrap gap-4">
+            <TechChip v-for="t in techs[tech].filter((t) => !t.highlight)" :tech="t" />
           </div>
         </div>
       </div>

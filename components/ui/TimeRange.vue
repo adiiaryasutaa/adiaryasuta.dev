@@ -1,5 +1,8 @@
 <script setup lang="ts">
-interface Period { month: string; year: number }
+interface Period {
+  month: string;
+  year: number;
+}
 
 defineProps<{
   start: Period;
@@ -9,8 +12,8 @@ defineProps<{
 </script>
 
 <template>
-  <p class="text-gray-900 text-sm text-left dark:text-gray-100">
+  <p class="text-left text-sm text-gray-900 dark:text-gray-100">
     {{ `${start.month} ${start.year}` }} –
-    {{ current ? $t('common.present') : end ? `${end.month} ${end.year}` : '' }}
+    {{ current ? $t("common.present") : end ? `${end.month} ${end.year}` : "" }}
   </p>
 </template>

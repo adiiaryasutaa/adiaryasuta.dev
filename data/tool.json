@@ -1,14 +1,44 @@
 {
   "data": [
-    { "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", "name": "Git" },
-    { "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", "name": "GitHub" },
-    { "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", "name": "VS Code" },
-    { "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellijidea/intellijidea-original.svg", "name": "IntelliJ IDEA" },
-    { "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/clion/clion-original.svg", "name": "CLion" },
-    { "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phpstorm/phpstorm-original.svg", "name": "PhpStorm" },
-    { "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/datagrip/datagrip-original.svg", "name": "DataGrip" },
-    { "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webstorm/webstorm-original.svg", "name": "WebStorm" },
-    { "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg", "name": "Android Studio" },
-    { "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", "name": "Figma" }
+    {
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      "name": "Git"
+    },
+    {
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      "name": "GitHub"
+    },
+    {
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+      "name": "VS Code"
+    },
+    {
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellijidea/intellijidea-original.svg",
+      "name": "IntelliJ IDEA"
+    },
+    {
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/clion/clion-original.svg",
+      "name": "CLion"
+    },
+    {
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phpstorm/phpstorm-original.svg",
+      "name": "PhpStorm"
+    },
+    {
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/datagrip/datagrip-original.svg",
+      "name": "DataGrip"
+    },
+    {
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webstorm/webstorm-original.svg",
+      "name": "WebStorm"
+    },
+    {
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
+      "name": "Android Studio"
+    },
+    {
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      "name": "Figma"
+    }
   ]
 }

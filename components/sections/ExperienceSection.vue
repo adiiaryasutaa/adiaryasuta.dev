@@ -11,43 +11,31 @@ const educations = allEducation();
 <template>
   <Container>
     <template #title>
-      <ContainerTitle>{{ $t('about.experience-section-title') }}</ContainerTitle>
+      <ContainerTitle>{{ $t("about.experience-section-title") }}</ContainerTitle>
     </template>
     <div class="flex flex-col gap-8 pt-4">
       <div class="flex flex-col gap-2">
-        <h1
-          class="text-gray-900 text-2xl font-medium text-left dark:text-gray-100"
-        >
-          {{ $t('about.experience-work') }}
+        <h1 class="text-left text-2xl font-medium text-gray-900 dark:text-gray-100">
+          {{ $t("about.experience-work") }}
         </h1>
         <div class="flex flex-col gap-4">
           <WorkExperienceCard v-for="work in works" :work="work" />
         </div>
       </div>
       <div class="flex flex-col gap-2">
-        <h1
-          class="text-gray-900 text-2xl font-medium text-left dark:text-gray-100"
-        >
-          {{ $t('about.experience-volunteer') }}
+        <h1 class="text-left text-2xl font-medium text-gray-900 dark:text-gray-100">
+          {{ $t("about.experience-volunteer") }}
         </h1>
         <div class="flex flex-col gap-4">
-          <VolunteerExperienceCard
-            v-for="volunteer in volunteers"
-            :volunteer="volunteer"
-          />
+          <VolunteerExperienceCard v-for="volunteer in volunteers" :volunteer="volunteer" />
         </div>
       </div>
       <div class="flex flex-col gap-2">
-        <h1
-          class="text-gray-900 text-2xl font-medium text-left dark:text-gray-100"
-        >
-          {{ $t('about.experience-education') }}
+        <h1 class="text-left text-2xl font-medium text-gray-900 dark:text-gray-100">
+          {{ $t("about.experience-education") }}
         </h1>
         <div class="flex flex-col gap-4">
-          <EducationExperienceCard
-            v-for="education in educations"
-            :education="education"
-          />
+          <EducationExperienceCard v-for="education in educations" :education="education" />
         </div>
       </div>
     </div>

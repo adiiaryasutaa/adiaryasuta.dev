@@ -8,17 +8,15 @@ const props = defineProps<Props>();
 
 <template>
   <div
-    class="flex flex-row gap-1.5 items-center rounded-md border border-gray-400 px-2 py-0.5 dark:border-gray-600"
+    class="flex flex-row items-center gap-1.5 rounded-md border border-gray-400 px-2 py-0.5 dark:border-gray-600"
   >
     <img
       v-if="props.tech.logo"
       :src="props.tech.logo"
       :alt="props.tech.name"
       :title="props.tech.name"
-      class="w-4 h-4"
+      class="h-4 w-4"
     />
-    <span class="text-gray-900 text-xs font-medium dark:text-gray-100">{{
-      props.tech.name
-    }}</span>
+    <span class="text-xs font-medium text-gray-900 dark:text-gray-100">{{ props.tech.name }}</span>
   </div>
 </template>

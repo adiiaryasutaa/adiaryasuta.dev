@@ -27,12 +27,12 @@ Route::apiResource('posts', PostController::class);
 
 `apiResource` generates these routes automatically:
 
-| Method | URI | Action |
-|--------|-----|--------|
-| GET | `/posts` | index |
-| POST | `/posts` | store |
-| GET | `/posts/{post}` | show |
-| PUT | `/posts/{post}` | update |
+| Method | URI             | Action  |
+| ------ | --------------- | ------- |
+| GET    | `/posts`        | index   |
+| POST   | `/posts`        | store   |
+| GET    | `/posts/{post}` | show    |
+| PUT    | `/posts/{post}` | update  |
 | DELETE | `/posts/{post}` | destroy |
 
 ## Creating a Model and Migration

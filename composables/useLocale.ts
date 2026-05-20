@@ -5,13 +5,13 @@ export const useLocale = () => {
   const cookieExpires = new Date();
   cookieExpires.setFullYear(cookieExpires.getFullYear() + 1);
 
-  const localeFromCookie = useCookie<string>('locale', {
-    default: () => 'en',
+  const localeFromCookie = useCookie<string>("locale", {
+    default: () => "en",
     expires: cookieExpires,
   });
 
   const switchLocale = () => {
-    const next = locale.value === 'en' ? 'id' : 'en';
+    const next = locale.value === "en" ? "id" : "en";
     localeFromCookie.value = next;
     setLocale(next);
     navigateTo(switchLocalePath(next));

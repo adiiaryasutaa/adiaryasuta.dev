@@ -1,81 +1,83 @@
 /* Variable fonts */
 @font-face {
-    font-family: 'Google Sans';
-    src: url('@/assets/fonts/google_sans/GoogleSans-VariableFont_GRAD,opsz,wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Google Sans";
+  src: url("@/assets/fonts/google_sans/GoogleSans-VariableFont_GRAD,opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Google Sans';
-    src: url('@/assets/fonts/google_sans/GoogleSans-Italic-VariableFont_GRAD,opsz,wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Google Sans";
+  src: url("@/assets/fonts/google_sans/GoogleSans-Italic-VariableFont_GRAD,opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 /* Static fallbacks */
 @font-face {
-    font-family: 'Google Sans';
-    src: url('@/assets/fonts/google_sans/static/GoogleSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Google Sans";
+  src: url("@/assets/fonts/google_sans/static/GoogleSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Google Sans';
-    src: url('@/assets/fonts/google_sans/static/GoogleSans-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Google Sans";
+  src: url("@/assets/fonts/google_sans/static/GoogleSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Google Sans';
-    src: url('@/assets/fonts/google_sans/static/GoogleSans-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Google Sans";
+  src: url("@/assets/fonts/google_sans/static/GoogleSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Google Sans';
-    src: url('@/assets/fonts/google_sans/static/GoogleSans-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Google Sans";
+  src: url("@/assets/fonts/google_sans/static/GoogleSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Google Sans';
-    src: url('@/assets/fonts/google_sans/static/GoogleSans-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Google Sans";
+  src: url("@/assets/fonts/google_sans/static/GoogleSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Google Sans';
-    src: url('@/assets/fonts/google_sans/static/GoogleSans-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Google Sans";
+  src: url("@/assets/fonts/google_sans/static/GoogleSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Google Sans';
-    src: url('@/assets/fonts/google_sans/static/GoogleSans-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Google Sans";
+  src: url("@/assets/fonts/google_sans/static/GoogleSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Google Sans';
-    src: url('@/assets/fonts/google_sans/static/GoogleSans-BoldItalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Google Sans";
+  src: url("@/assets/fonts/google_sans/static/GoogleSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }

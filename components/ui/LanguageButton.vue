@@ -7,12 +7,12 @@ const { locale, switchLocale } = useLocale();
 <template>
   <button
     @click="switchLocale"
-    class="p-2 rounded-lg text-gray-500 border border-gray-400 bg-gray-200 hover:text-primary hover:border-primary hover:bg-gray-300 hover:cursor-pointer dark:text-gray-500 dark:border-gray-600 dark:bg-gray-950 dark:hover:text-primary dark:hover:border-primary dark:hover:bg-gray-900"
+    class="hover:text-primary hover:border-primary dark:hover:text-primary dark:hover:border-primary rounded-lg border border-gray-400 bg-gray-200 p-2 text-gray-500 hover:cursor-pointer hover:bg-gray-300 dark:border-gray-600 dark:bg-gray-950 dark:text-gray-500 dark:hover:bg-gray-900"
   >
-    <div class="flex justify-start items-center">
-      <LanguageIcon class="w-5 h-5" />
+    <div class="flex items-center justify-start">
+      <LanguageIcon class="h-5 w-5" />
       <span
-        class="grow text-xs px-1 py-0.5 bg-gray-100 border border-gray-400 rounded-lg ml-1 dark:bg-gray-900 dark:border-gray-600"
+        class="ml-1 grow rounded-lg border border-gray-400 bg-gray-100 px-1 py-0.5 text-xs dark:border-gray-600 dark:bg-gray-900"
       >
         {{ locale }}
       </span>

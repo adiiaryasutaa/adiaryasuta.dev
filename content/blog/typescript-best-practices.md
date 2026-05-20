@@ -120,12 +120,7 @@ const user = data as User;
 
 // Good
 function isUser(value: unknown): value is User {
-  return (
-    typeof value === "object" &&
-    value !== null &&
-    "id" in value &&
-    "email" in value
-  );
+  return typeof value === "object" && value !== null && "id" in value && "email" in value;
 }
 
 if (isUser(data)) {

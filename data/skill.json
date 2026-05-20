@@ -1,47 +1,47 @@
 {
   "highlight": {
     "data": [
-        {
-          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
-          "name": "NestJS",
-          "description": "NestJS is a framework for building server-side applications."
-        },
-        {
-          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg",
-          "name": "Laravel",
-          "description": "Laravel is a web application framework with expressive, elegant syntax."
-        },
-        {
-          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-          "name": "MySQL",
-          "description": "MySQL is a relational database management system."
-        },
-        {
-          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-          "name": "PostgreSQL",
-          "description": "PostgreSQL is a relational database management system."
-        },
-        {
-          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg",
-          "name": "Nuxt.js",
-          "description": "Nuxt.js is a framework for building server-side applications."
-        },
-        {
-          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-          "name": "Next.js",
-          "description": "Next.js is a framework for building server-side applications."
-        },
-        {
-          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-          "name": "TailwindCSS",
-          "description": "TailwindCSS is a utility-first CSS framework for rapidly building custom user interfaces."
-        }
-      ]
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
+        "name": "NestJS",
+        "description": "NestJS is a framework for building server-side applications."
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg",
+        "name": "Laravel",
+        "description": "Laravel is a web application framework with expressive, elegant syntax."
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+        "name": "MySQL",
+        "description": "MySQL is a relational database management system."
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        "name": "PostgreSQL",
+        "description": "PostgreSQL is a relational database management system."
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg",
+        "name": "Nuxt.js",
+        "description": "Nuxt.js is a framework for building server-side applications."
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        "name": "Next.js",
+        "description": "Next.js is a framework for building server-side applications."
+      },
+      {
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+        "name": "TailwindCSS",
+        "description": "TailwindCSS is a utility-first CSS framework for rapidly building custom user interfaces."
+      }
+    ]
   },
 
   "other": {
     "data": [
-      { 
+      {
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
         "name": "HTML"
       },

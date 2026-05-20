@@ -19,21 +19,21 @@ const copy = async (code: string) => {
 </script>
 
 <template>
-  <div class="my-5 rounded-lg overflow-hidden border border-[#444c56]">
+  <div class="my-5 overflow-hidden rounded-lg border border-[#444c56]">
     <!-- Header bar -->
-    <div class="flex items-center justify-between px-4 py-2 bg-[#1c2128] border-b border-[#444c56]">
-      <span class="text-xs font-mono text-gray-400">
-        {{ filename ?? language ?? 'code' }}
+    <div class="flex items-center justify-between border-b border-[#444c56] bg-[#1c2128] px-4 py-2">
+      <span class="font-mono text-xs text-gray-400">
+        {{ filename ?? language ?? "code" }}
       </span>
       <button
         v-if="code"
         @click="copy(code)"
         :aria-label="copied ? 'Copied!' : 'Copy code'"
-        class="flex items-center gap-1.5 text-xs text-gray-400 hover:text-gray-200 transition-colors cursor-pointer"
+        class="flex cursor-pointer items-center gap-1.5 text-xs text-gray-400 transition-colors hover:text-gray-200"
       >
-        <CheckIcon v-if="copied" class="w-3.5 h-3.5" />
-        <ClipboardIcon v-else class="w-3.5 h-3.5" />
-        <span>{{ copied ? 'Copied!' : 'Copy' }}</span>
+        <CheckIcon v-if="copied" class="h-3.5 w-3.5" />
+        <ClipboardIcon v-else class="h-3.5 w-3.5" />
+        <span>{{ copied ? "Copied!" : "Copy" }}</span>
       </button>
     </div>
     <pre class="!my-0 !rounded-none !border-0"><slot /></pre>

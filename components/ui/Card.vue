@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-4 bg-gray-100 border border-gray-400 rounded-lg dark:bg-gray-950 dark:border-gray-600"
+    class="rounded-lg border border-gray-400 bg-gray-100 p-4 dark:border-gray-600 dark:bg-gray-950"
   >
     <slot />
   </div>
